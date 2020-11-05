@@ -42,9 +42,13 @@
     top: 5%;
 }
 
-.link-judul{
-    text-decoration: none;
-    color: fuchsia;
+.text-judul{
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .card-berita{

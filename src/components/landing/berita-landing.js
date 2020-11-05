@@ -47,13 +47,13 @@ const JudulBerita = () => {
 
 function BeritaLain(props) {
     const item = props.dataBeritaLain.map((doc, idx) => {
-        if (idx !== 0) {
+        if (idx !== 0 && idx < 5) {
             return (
                 <Col md={3} className="colBerita">
                     <div className="card card-berita">
                         <img src={doc.gambar} width="270" height="300" alt="" />
                         <Link to="" className="link-judul">
-                                <h6 style={{ textDecoration: `none`, color: `black` }}>{doc.judul}</h6>
+                                <h6 style={{ textDecoration: `none`, color: `black` }} className="text-judul">{doc.judul}</h6>
                         </Link>
                         <Container>
                             <Row>

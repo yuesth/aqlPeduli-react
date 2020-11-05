@@ -16,7 +16,7 @@ function App() {
       <Route path="/" exact component={Landing}></Route>
       <Route path="/profil" exact component={Profil}></Route>
       <Route path="/program" exact component={Program}></Route>
-      <Route path="/program-detail" exact component={ProgramDetail}></Route>
+      <Route path="/program/:id" exact component={ProgramDetail}></Route>
       <Route path="/kepeduliankita" exact component={Kepeduliankita}></Route>
       <Route path="/kepeduliankita-detail" exact component={KepeduliankitaDetail}></Route>
       <Route component={NotFound}></Route>
